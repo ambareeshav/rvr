@@ -20,7 +20,7 @@ In Claude Code:
 
 Describe the design decision and end your message with `rvr`, e.g.
 
-> We'll store per-tenant embeddings in one Qdrant collection filtered by tenant_id payload. rvr
+> Instead of having the LLM read the whole document with get_document, get_document(code) returns a skeleton and it used IDs from the skeleton to read just the needed sections with get_document(code, section_ids=[…]) rvr
 
 The bundled hook forces the skill to run when a message ends with `rvr`. It also triggers on its own when you ask whether a specific design will hold up.
 
