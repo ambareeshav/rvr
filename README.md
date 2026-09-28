@@ -4,6 +4,8 @@ Similar idea to my [idd plugin](https://github.com/ambareeshav/idd), rvr (Resear
 
 ## Install
 
+Part of [Ambareesha's Claude Code plugins](https://github.com/ambareeshav/claude-plugins). Add the marketplace once, then install rvr from it.
+
 Inside Claude Code:
 
 ```
@@ -11,7 +13,16 @@ Inside Claude Code:
 /plugin install rvr@ambareeshav
 ```
 
-This adds [all my plugins](https://github.com/ambareeshav/claude-plugins) as one marketplace. To add only this repo instead, use `/plugin marketplace add ambareeshav/rvr` and `/plugin install rvr@rvr`.
+Or, once the marketplace is added, run `/plugin`, open the **ambareeshav** marketplace, and install rvr from the list.
+
+If you're continuing a session, run `/reload-plugins` to turn it on.
+
+From the terminal:
+
+```
+claude plugin marketplace add ambareeshav/claude-plugins
+claude plugin install rvr@ambareeshav
+```
 
 ## Use
 
@@ -20,10 +31,3 @@ Describe the design decision and end your message with `rvr`, e.g.
 > Instead of having the LLM read the whole document with get_document, get_document(code) returns a skeleton and it uses section-ids from the skeleton to read just the needed sections with get_document(code, section_ids=[…]) rvr
 
 The bundled hook forces the skill to run when a message ends with `rvr`. It also triggers on its own when you ask whether a specific design will hold up.
-
-## Install from the terminal
-
-```
-claude plugin marketplace add ambareeshav/claude-plugins
-claude plugin install rvr@ambareeshav
-```
