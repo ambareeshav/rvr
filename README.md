@@ -20,7 +20,7 @@ In Claude Code:
 
 Describe the design decision and end your message with `rvr`, e.g.
 
-> Instead of having the LLM read the whole document with get_document, get_document(code) returns a skeleton and it used IDs from the skeleton to read just the needed sections with get_document(code, section_ids=[…]) rvr
+> Instead of having the LLM read the whole document with get_document, get_document(code) returns a skeleton and it uses section-ids from the skeleton to read just the needed sections with get_document(code, section_ids=[…]) rvr
 
 The bundled hook forces the skill to run when a message ends with `rvr`. It also triggers on its own when you ask whether a specific design will hold up.
 
