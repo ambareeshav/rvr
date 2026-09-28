@@ -27,6 +27,6 @@ The bundled hook forces the skill to run when a message ends with `rvr`. It also
 ## Manual install (skill only, no hook)
 
 ```
-mkdir -p ~/.claude/skills/rvr
-curl -o ~/.claude/skills/rvr/SKILL.md https://raw.githubusercontent.com/ambareeshav/rvr/main/skills/rvr/SKILL.md
+claude plugin marketplace add ambareeshav/rvr
+claude plugin install rvr@ambareeshav
 ```
