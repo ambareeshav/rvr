@@ -7,9 +7,11 @@ Similar idea to my [idd plugin](https://github.com/ambareeshav/idd), rvr (Resear
 Inside Claude Code:
 
 ```
-/plugin marketplace add ambareeshav/rvr
+/plugin marketplace add ambareeshav/claude-plugins
 /plugin install rvr@ambareeshav
 ```
+
+This adds [all my plugins](https://github.com/ambareeshav/claude-plugins) as one marketplace. To add only this repo instead, use `/plugin marketplace add ambareeshav/rvr` and `/plugin install rvr@rvr`.
 
 ## Use
 
@@ -22,6 +24,6 @@ The bundled hook forces the skill to run when a message ends with `rvr`. It also
 ## Install from the terminal
 
 ```
-claude plugin marketplace add ambareeshav/rvr
+claude plugin marketplace add ambareeshav/claude-plugins
 claude plugin install rvr@ambareeshav
 ```
