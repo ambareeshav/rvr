@@ -1,0 +1,16 @@
+{
+  "name": "ambareeshav",
+  "owner": {
+    "name": "Ambareesha Vittal"
+  },
+  "plugins": [
+    {
+      "name": "rvr",
+      "source": "./",
+      "description": "Research, Validate, Report: a strict feasibility check for architectural and technical proposals."
+    }
+  ],
+  "metadata": {
+    "description": "Ambareesha Vittal's Claude Code plugins."
+  }
+}
