@@ -1,6 +1,6 @@
 # RVR — Research, Validate, Report
 
-Similar idea to my idd plugin, rvr (Research, Validate, Report) is for the moment before you commit to a new design. Describe an approach or alternative, and end your message with `rvr`. Claude Code gathers the facts, builds throwaway tests if needed, looks for ways to break the design, and reports back with **Feasibility**, **Why**, **Gotchas**, and a better alternative if there is one. The work happens in separate subagents or a scratch area, so your existing code is never changed.
+Similar idea to my [idd plugin](https://github.com/ambareeshav/idd), rvr (Research, Validate, Report) is for the moment before you commit to a new design. Describe an approach or alternative, and end your message with `rvr`. Claude Code gathers the facts, builds throwaway tests if needed, looks for ways to break the design, and reports back with **Feasibility**, **Why**, **Gotchas**, and a better alternative if there is one. The work happens in separate subagents or a scratch area, so your existing code is never changed.
 
 ## Install
 
