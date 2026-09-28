@@ -1,15 +1,10 @@
 # RVR — Research, Validate, Report
 
-A Claude Code skill that answers "will this actually work?" for a specific architectural, schema, pipeline, or technical design proposal. It researches the real constraints, stress-tests the idea with a Sandboxer and a Skeptic, then reports a strict verdict:
-
-- **Feasibility Score** — Highly Feasible / Feasible with Trade-offs / Will Break
-- **The Why**
-- **The Gotchas**
-- **The Pivot** (when it isn't Highly Feasible)
+Similar idea to my idd plugin, rvr (Research, Validate, Report) is for the moment before you commit to a new design. Describe an approach or alternative, and end your message with `rvr`. Claude Code gathers the facts, builds throwaway tests if needed, looks for ways to break the design, and reports back with **Feasibility**, **Why**, **Gotchas**, and a better alternative if there is one. The work happens in separate subagents or a scratch area, so your existing code is never changed.
 
 ## Install
 
-In Claude Code:
+Inside Claude Code:
 
 ```
 /plugin marketplace add ambareeshav/rvr
@@ -24,7 +19,7 @@ Describe the design decision and end your message with `rvr`, e.g.
 
 The bundled hook forces the skill to run when a message ends with `rvr`. It also triggers on its own when you ask whether a specific design will hold up.
 
-## Manual install (skill only, no hook)
+## Install from the terminal
 
 ```
 claude plugin marketplace add ambareeshav/rvr
